@@ -11,7 +11,6 @@ class Student
 			cout<<"\nEnter the Name and ID :";
 			cin>>name>>id;
 		}
-		
 };
 
 class Result:public Student
@@ -23,7 +22,7 @@ class Result:public Student
 			cout<<"\nEnter the Percentage :";
 			cin>>per;
 		}	
-		void showResult() {
+		  void showResult() {
 			cout<<"\nName :"<<name;
 			cout<<"\nID :"<<id;
 			cout<<"\nPercentage :"<<per;
@@ -32,9 +31,11 @@ class Result:public Student
 
 int main()
 {
+
 	Result R;
 	R.setStudent();
 	R.setPer();
 	R.showResult();
+
 	return 0;
 }
